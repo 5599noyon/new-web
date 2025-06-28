@@ -1,12 +1,14 @@
-/* =========================
-    All Common style start  
-============================= */
+/*   All Common style start   */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Helvetica Neue', sans-serif;"
+}
+
+i {
+    cursor: pointer;
 }
 
 ul,ol {
@@ -30,123 +32,131 @@ a {
 
 
 
-/* =========================
-    All Common style end  
-============================= */
+/* All Common style end */
 
 
-/* =========================
-    Nav style start 
-============================= */
+/*    Nav Work start    */
 
+nav {
+    padding: 10px 0 12px 0;
+    border-bottom: 1px solid #ECECEC;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    background: #FFFFFF;
+}
 
-.nav_container {
+.nav_work {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 18px;
 }
 
-.nav_container .txt .logo {
+.nav_text .logo {
     width: 82px;
     margin-right: 24px;
 }
 
-.nav_container .txt .logo img {
+.nav_text .logo img {
     width: 100%;
 }
 
-.nav_container .txt .menu ul {
+.nav_text .menu ul {
     display: flex;
     gap: 26px;
 }
 
-.nav_container .txt .menu ul li a {
+.nav_text .menu ul li a {
     font-size: 15px;
     font-weight: 500;
-
 }
 
-.nav_container .txt {
+.nav_text .menu ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color:#F9BF29 ;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.nav_text {
     display: flex;
     align-items: center;
     justify-content: space-between
 }
 
-.nav_container .btn {
+.nav_button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 }
 
-.nav_container .btn button {
+.nav_button button {
     padding: 10px 21px;
     border-radius: 1000px;
     border: none;
 }
 
-.nav_container .btn .login {
-    
+.login {
+    cursor: pointer;
     background: #F5F8FF;
     color: #0057FF;
 }
 
-.nav_container .btn .signup {
-    
+.login:hover {
+    background: linear-gradient(#DEE8FF);
+    transition: all linear 0.5s;
+    font-weight: bolder;
+}
+
+.signup {
+    cursor: pointer;
     background: #0057FF;
     color: #F5F8FF;
 }
 
-.nav_container .btn .freetrial {
+.freetrial {
+    cursor: pointer;
     margin-right: 15px;
     text-align: center;
-
 }
 
-.nav_container .btn .freetrial img {
+.freetrial:hover {
+    background: linear-gradient(#DEE8FF, #F9BF29);
+}
+
+.nav_button .freetrial img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
-.nav_container .btn .adobe_logo {
+.nav_button .adobe_logo {
     width: 60px;
 }
 
-.nav_container .btn .adobe_logo img {
+.nav_button .adobe_logo img {
     width: 100%;
 }
 
-nav {
-    padding: 16px 0;
-    border-bottom: 1px solid #ECECEC;
 
-}
-
-.nav_container .btn .divider{
+.nav_divider{
      height: 20px;
         width: 1px;
       background-color: #ccc;
       margin: 0 6px;
 }
 
+/*    Nav Work End    */
 
 
+/* Searchbar start */
 
 
-/* =========================
-    Nav style end
-============================= */
-
-
-/* =========================
-    Searchbar Style start
-============================= */
-
-
-.searchbar_container {
+.searchbar_style {
     display: flex;
     align-items: center;
     border: 1px solid #ccc;
@@ -183,8 +193,7 @@ nav {
     font-weight: 500;
 }
 
- .searchbar_container .text {
-    flex: 1;
+ .searchbar_style .text {
     padding: 10px 17px;
 }
 
@@ -198,7 +207,6 @@ nav {
 
 .text ul li a {
     text-decoration: none;
-    color: #191919;
     font-weight: 500;
     padding: 5px 14px;
     border-radius: 1000px;
@@ -207,73 +215,81 @@ nav {
 }
 
 .text ul li a:hover {
-    background-color: #191919;
-    color: #fff;
+    text-decoration: underline;
+    text-decoration-color:red ;
+    font-weight: bolder;
+    transition: all linear 0.3s;
 }
 
-.text ul li a.active {
-    background-color: #111;
-    color: #fff;
+.active {
+    padding: 8px 12px;
+    cursor: pointer;
+    background: #191919;
+    border-radius: 1000px;
+    color: #FFFFFF;
 }
 
-/* =========================
-    Searchbar Style end
-============================= */
 
 
-/* =========================
-    Dropdown Style start
-============================= */
-.dropdown{
+/*  Searchbar end  */
+
+
+/* Menu Style start */
+.menu_work{
     border-bottom: 1px solid #ECECEC;
 }
 
-.dropdown_container{
+.manu_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.filters {
+.clik_work {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
 
-.filter-btn {
+.clik_button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 9px;
-  padding: 8px 12px;
+  padding: 1px 12px;
   background-color: #ffffff;
   border: 1px solid #E8E8E8;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.filter-btn span{
+.clik_button:hover {
+    background: linear-gradient(#F5F8FF,#DEE8FF);
+    transition: all linear .5s;
+}
+
+.clik_button span{
     font-size: 13px;
 }
 
-.filter-btn .icon {
+.clik_button .icon {
   height: 18px;
 }
 
-.filter-btn .arrow {
+.clik_button .arrow {
   width: 7px;
 }
 
 
 
-.dropdown_right h4{
+.menu_button h4{
     font-size: 12px;
     color: #696969;
 
 }
 
-.dropdown_right p{
+.menu_button p{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,18 +299,13 @@ nav {
 }
 
 
-/* =========================
-    Dropdown Style end
-============================= */
+/* Menu Style End */
 
 
 
-/* =========================
-    Post design Style start
-============================= */
-#post_design{
+/* Post design 1,3,4,5,6 Style start */
+#post_design1{
     padding: 20px 0;
-
 }
 
 .post_container{
@@ -348,51 +359,61 @@ nav {
     
 }
 
-/* =========================
-    Post design Style end
-============================= */
+.every_dot {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/*Post design 1,3,4,5,6 Style End */
 
 
 
 
-/* =========================
-    Product design Style start
-============================= */
-#creative_cloud{
+/* Creative Cloud Style start */
+#cloud_work{
     padding: 32px 30px;
     background: #F2F2F2;
     margin-bottom: 40px;
 }
 
-.creative_cloud_container{
+.cloud_container{
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 50px;
 }
-
-.creative_cloud_container .creative_cloud_text h2{
+.cloud_text h2{
     font-size: 19px;
     line-height: 1.57;
 }
-.creative_cloud_container .creative_cloud_text p{
+.cloud_text p{
     font-size: 14px;
     max-width: 280px;
     padding: 4px 0 30px 0;
     line-height: 1.4;
 }
 
-.creative_cloud_container .creative_cloud_text button{
+.cloud_text button{
     font-size: 13px;
     background: #0057FF;
+    cursor: pointer;
     border: none;
     border-radius: 1000px;
     color: #ffffff;
     padding: 10px 20px;
     line-height: 1.07;
+    transition: all linear 0.3s;
+    cursor: pointer;
+    transform: scale(1);
 }
 
-.creative_cloud_container .creative_cloud_products{
+.cloud_text button:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+.cloud_sell{
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -400,12 +421,34 @@ nav {
     max-width: 1050px;
 }
 
-.creative_cloud_container .creative_cloud_products .product_post{
+.product_post{
     max-width: 246px;
 
 }
 
-.creative_cloud_container .creative_cloud_products .product_post .text{
+.product_post .image {
+    transition: all linear 0.3s;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.product_post .image:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+.product_post .icon {
+    transition: all linear 0.3s;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.product_post .icon:hover {
+    transform: scale(1.2);
+    z-index: 5;
+}
+
+.product_post .text{
     margin-top: 28px;
     display: flex;
     align-items: start;
@@ -413,13 +456,13 @@ nav {
     gap: 12px;
 }
 
-.creative_cloud_container .creative_cloud_products .product_post .text .product_text h3{
+.product_text h3{
     font-size: 13px;
     line-height: 1.38;
     
 }
 
-.creative_cloud_container .creative_cloud_products .product_post .text .product_text p{
+.product_text p{
     font-size: 12px;
     color: #696969;
     line-height: 1.5;
@@ -427,14 +470,10 @@ nav {
 }
 
 
-/* =========================
-    Product design Style end
-============================= */
+/* Creative Cloud Style End */
 
 
-/* =========================
-    Footer Style start
-============================= */
+/*  Footer Style start  */
 
 footer{
     padding: 10px 0;
@@ -447,20 +486,23 @@ footer{
     justify-content: space-between;
 }
 
-.footer_container .footer_menu ul{
+.footer_menu ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
 }
 
-.footer_container .footer_menu ul li a{
+.footer_menu ul li a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
     font-size: 10px;
     color: #696969;
     line-height: 1.43;
 }
 
-.footer_container .footer_menu ul .divider{
+.footer_menu ul .divider{
      
       height: 14px;
       width: 1px;
@@ -469,7 +511,8 @@ footer{
 
 }
 
-/* =========================
-    Footer Style end
-============================= */
+.footer_logo {
+    cursor: pointer;
+}
 
+/* Footer Style End */
