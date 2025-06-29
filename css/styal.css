@@ -7,6 +7,15 @@
     font-family: "Helvetica Neue', sans-serif;"
 }
 
+:root {
+    --font-colour:#191919;
+    --sesond-text:#696969;
+    --leniar-colour: (#F5F8FF,#DEE8FF);
+    --button-colour:#0057FF;
+    --hover-colour:(#F2F2F2,#FF9A00);
+    --font-family:"Helvetica Neue', sans-serif;"
+}
+
 i {
     cursor: pointer;
 }
@@ -339,6 +348,7 @@ nav {
     border-radius: 10px;
     overflow: hidden;
 }
+
 
 .post_container .post  .text .post_icon{
     display: flex;
